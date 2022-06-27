@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  com.tweetapp:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "MongoConnection:ConnectionString=mongodb://tweetapp_mongo:27017"
+      - "MongoConnection:Database=tweetapp"
+    ports:
+      - "80"
